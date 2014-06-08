@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @FONT-FACE DECLARATIONS */
+
+@font-face {
+    font-family: 'Lobster13Regular';
+    src: url('../fonts/Lobster_1.3-webfont.eot?') format('eot'),
+         url('../fonts/Lobster_1.3-webfont.woff') format('woff'),
+         url('../fonts/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('../fonts/Lobster_1.3-webfont.svg#webfont1MhCsZSr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansBoldItalic';
+    src: url('../fonts/PTS76F-webfont.eot?') format('eot'),
+         url('../fonts/PTS76F-webfont.woff') format('woff'),
+         url('../fonts/PTS76F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS76F-webfont.svg#webfont2oPncueb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansBold';
+    src: url('../fonts/PTS75F-webfont.eot?') format('eot'),
+         url('../fonts/PTS75F-webfont.woff') format('woff'),
+         url('../fonts/PTS75F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS75F-webfont.svg#webfontaW07W6NV') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansItalic';
+    src: url('../fonts/PTS56F-webfont.eot?') format('eot'),
+         url('../fonts/PTS56F-webfont.woff') format('woff'),
+         url('../fonts/PTS56F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS56F-webfont.svg#webfontV5YcF68V') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('../fonts/PTS55F-webfont.eot?') format('eot'),
+         url('../fonts/PTS55F-webfont.woff') format('woff'),
+         url('../fonts/PTS55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS55F-webfont.svg#webfontakBUUg6U') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* @BEGIN ADAM GRUBER CSS */
+
+body{
+background: #401e02 url(../images/bg.gif) repeat-x;
+font-family: 'PTSansRegular', Arial, sans-serif;
+}
+
+p, ul, li, a, h3{
+	font-family: 'PTSansRegular', Arial, sans-serif;
+}
+
+#wrapper{width:960px; margin:0 auto;}
+
+#left{
+	margin-top:19px;
+	float:left;
+	width:192px;
+}
+
+#middle{
+	float:left;
+	width:608px;	
+}
+
+#right{
+	float:left;
+	margin-top:262px;
+}
+
+#tagLabel{
+	width:192px;
+	height:92px;
+	display:block;
+	background:url(../images/tagLabel.png) no-repeat;
+	font: 30px/32px 'Lobster13Regular', Arial, sans-serif;
+	color:#fff;
+	padding:16px 0 0 16px;
+	text-shadow: 0 -1px 1px #875328;
+}
+
+#viewport{
+	height:566px;
+	clear:both;
+}
+
+/* FOOTER STYLES */
+#footer{
+	color:#b7b2a4;
+	overflow:hidden;
+}
+
+#footer h3{
+	color:#e6e5d8;
+	font:21px 'Lobster13Regular', Arial, sans-serif;
+	padding-top:2px;
+	height:30px;
+	display:block;
+}
+
+#footer p, #footer ul, #footer li, #footer a{
+	color:#b7b2a4;
+	font-size:12px;
+	line-height:17px;
+}
+
+#footer a{
+   -webkit-transition:color .3s ease-in;  
+   -moz-transition:color .3s ease-in;  
+   -o-transition:color .3s ease-in;  
+   transition:color .3s ease-in;  
+}
+
+#footer a:hover{
+	color:#fff;
+}
+
+#footer li{
+	margin-bottom:8px;
+}
+
+#footer-separator{
+	width:1px;
+	float:left;
+	display:block;
+	background-color:#54361c;
+	height:139px;
+}
+
+#about-me{
+	width:230px;
+	float:left;
+	background:url(../images/icon-about.png) no-repeat 0 2px;
+	margin-left:38px;
+}
+
+#about-me h3{
+	padding-left:32px;
+}
+
+#about-me p{
+	padding-right:20px;
+}
+
+
+#feeds{
+	width:230px;
+	float:left;
+	background:url(../images/icon-feeds.png) no-repeat;
+	margin-left:30px;
+}
+
+#feeds h3{
+	padding-left:36px;
+}
+
+#feeds ul{
+	padding-right:10px;
+}
+
+#addictions{
+	width:190px;
+	float:left;
+	background:url(../images/icon-addictions.png) no-repeat 0 1px;
+	margin-left:30px;
+}
+
+#addictions h3{
+	padding-left:38px;
+}
+
+#connect{
+	width:179px;
+	float:left;
+	background:url(../images/icon-connect.png) no-repeat;
+	margin-left:30px;
+}
+
+#connect h3{
+	padding-left:32px;
+}
+
+.clear{
+	clear:both;
+}
+
+.whiteLine{
+	height:1px;
+	background-color:#fff;
+	width:540px;
+	margin-left:38px;
+}
+
+#footer a.resume{
+	padding-left:20px;
+	background:url(../images/document-pdf.png) no-repeat;
+}
+
+#footer a.email{
+	padding-left:20px;
+	background:url(../images/mail.png) no-repeat;
+}
+
+#footer a.twitter{
+	padding-left:20px;
+	background:url(../images/balloon-twitter.png) no-repeat;
+}
+
+#footer a.linkedin{
+	padding-left:20px;
+	background:url(../images/linkedin.png) no-repeat;
+}
+
+/*********** @SCROLLABLE AREA ***********/
+
+
+/* root element for horizontal scrollables */
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 608px;
+	height: 510px;
+	margin-top:28px;
+	margin-bottom:55px;
+}
+	
+/* root element for scrollable items */
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+	
+/* single scrollable item */
+.item {
+	float:left;
+	width:544px;
+	height:510px;
+	padding:0 28px;
+}
+	
+.item h3{
+	font: normal 24px 'PTSansRegular', Arial, sans-serif;
+	color:#3d1f06;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+	padding-bottom:8px;
+}
+
+.item h3 em{
+	font: normal 24px 'PTSansItalic', Arial, sans-serif;
+}
+
+.item p{
+	font: 14px/19px 'PTSansRegular', Arial, sans-serif;
+	color:#473b2b;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+	margin-bottom:8px;
+}
+
+.item p em{
+	font: 14px/19px 'PTSansItalic', Arial, sans-serif;
+}
+
+.item p a{
+	color:#df7422;
+}
+
+.item a:hover{
+	text-decoration:none;
+}
+
+.item a:active{
+	color:#6e3b0c;
+}
+
+.fadeleft{
+	background: url(../images/scroller-fade.png);
+	background-position:right;
+	height: 510px;
+	width:28px;
+	position:absolute;
+	left: 0px;
+	top:0px;
+}
+	
+.faderight{
+	background: url(../images/scroller-fade.png);
+	height: 510px;
+	width:28px;
+	position:absolute;
+	right: 0px;
+	top:0px;
+}
+
+.project-image-wrap{
+    padding:8px;
+    position:relative;
+    margin-bottom:15px;
+}
+
+.project-image-wrap img{
+    width:528px;    
+    height:288px;
+    display:block;
+}
+
+.project-image-wrap a{
+    position:absolute;
+    left:8px;
+    top:8px;
+    width:528px;    
+    height:288px;
+    background: url(../images/zoom-btn.png) no-repeat bottom right;
+    text-indent:-9999em;
+    opacity:0;
+    border:0;
+}
+
+.project-image-wrap a.triptych-l{
+    position:absolute;
+    left:8px;
+    top:8px;
+    width:176px;    
+    height:288px;
+    background: url(../images/zoom-btn.png) no-repeat bottom right;
+    text-indent:-9999em;
+    opacity:0;
+    border:0;
+}
+
+.project-image-wrap a.triptych-mid{
+    position:absolute;
+    left:184px;
+    top:8px;
+    width:176px;    
+    height:288px;
+    background: url(../images/zoom-btn.png) no-repeat bottom right;
+    text-indent:-9999em;
+    opacity:0;
+    border:0;
+}
+
+.project-image-wrap a.triptych-r{
+    position:absolute;
+    left:360px;
+    top:8px;
+    width:176px;    
+    height:288px;
+    background: url(../images/zoom-btn.png) no-repeat bottom right;
+    text-indent:-9999em;
+    opacity:0;
+    border:0;
+}
+	
+.project-image-wrap .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:544px;
+    height:306px;
+    background: url(../images/image-frame.png) no-repeat top left;
+}
+
+.project-image-wrap .overlay-triptych{
+    position:absolute;
+    top:0;
+    left:0;
+    width:544px;
+    height:306px;
+    background: url(../images/image-frame-triptych.png) no-repeat top left;
+}
+	
+.hovFade{
+    opacity:0.85;
+/*    opacity:0.90;   */
+}
+
+/*********** styles for custom lightbox look ***********/
+
+#fzoom-title { text-align: left; }
+
+#fzoom-title b { display: block; margin-right: 80px; }
+
+#fzoom-title span { float: right; }
+
+
+/*********** @PORTFOLIO NAVIGATION ***********/
+
+/* position and dimensions of the nav */
+.navi {
+	margin-left:38px;
+	padding-left:13px;
+	margin-top:42px;
+	padding-bottom:20px;
+	width:527px;
+	height:20px;
+	border-bottom:1px solid #807865;
+}
+
+
+/* items inside nav */
+.navi a {
+	width:16px;
+	height:18px;
+	float:left;
+	margin-right:10px;
+	background:url(../images/navdots.png) top left no-repeat;
+	display:block;
+	font-size:1px;
+}
+
+/* mouseover state */
+.navi a:hover {
+	background-position:0 -20px;
+}
+
+/* active state (current page state) */
+.navi a.active {
+	background-position:0 -40px;
+} 	
+
+/* prev, next, prevPage and nextPage buttons */
+a.next {
+	width:65px;
+	height:65px;
+	display:block;
+	background:url(../images/next-btn.png) no-repeat;
+	text-indent:-9999em;
+}
+
+/* mouseover state */
+a.next:hover{
+}
+
+a.next:active{
+	background-position:0 -65px;
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}

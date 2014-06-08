@@ -1,0 +1,63 @@
+
+/*********** previous and next buttons ***********/
+
+
+/* prev, next, prevPage and nextPage buttons */
+a.prev, a.next, a.prevPage, a.nextPage {
+	cursor:pointer;
+	font-size:15px;
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position:0px -18px;		
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+
+/* next button uses another background image */
+a.next, a.nextPage {
+	background-image:url(../img/scrollable/arrow/right.png);
+	clear:right;	
+}
+
+
+
+/*********** navigator ***********/
+
+
+/* position and dimensions of the navigator */
+.navi {
+	margin-left:38px;
+	padding-left:13px;
+	margin-top:42px;
+	padding-bottom:20px;
+	width:527px;
+	height:20px;
+	border-bottom:1px solid #807865;
+}
+
+
+/* items inside navigator */
+.navi a {
+	width:16px;
+	height:18px;
+	float:left;
+	margin-right:10px;
+	background:url(../images/navdots.png) top left no-repeat;
+	display:block;
+	font-size:1px;
+}
+
+/* mouseover state */
+.navi a:hover {
+	background-position-y:-18px;
+}
+
+/* active state (current page state) */
+.navi a.active {
+	background-position-y:-36px;
+} 	

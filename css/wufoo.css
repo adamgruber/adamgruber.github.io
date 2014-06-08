@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* @FONT-FACE DECLARATIONS */
+
+@font-face {
+    font-family: 'Lobster13Regular';
+    src: url('http://homepage.mac.com/talknmime/fonts/Lobster_1.3-webfont.eot?') format('eot'),
+         url('http://homepage.mac.com/talknmime/fonts/Lobster_1.3-webfont.woff') format('woff'),
+         url('http://homepage.mac.com/talknmime/fonts/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('http://homepage.mac.com/talknmime/fonts/Lobster_1.3-webfont.svg#webfont1MhCsZSr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('http://homepage.mac.com/talknmime/fonts/PTS55F-webfont.eot?') format('eot'),
+         url('http://homepage.mac.com/talknmime/fonts/PTS55F-webfont.woff') format('woff'),
+         url('http://homepage.mac.com/talknmime/fonts/PTS55F-webfont.ttf') format('truetype'),
+         url('http://homepage.mac.com/talknmime/fonts/PTS55F-webfont.svg#webfontakBUUg6U') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/*********** @CONTACT FORM ***********/
+
+.wufoo{
+	font-family:'PTSansRegular', Arial, sans-serif;
+}
+
+.wufoo .info h2 {
+	font:24px/27px 'Lobster13Regular', Arial, sans-serif;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+.embed .confirm h2 span {
+	font:32px/36px 'Lobster13Regular', Arial, sans-serif;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+.wufoo label, .embed .confirm h2{
+	font-family:'PTSansRegular', Arial, sans-serif;
+	font-weight:normal !important;
+	text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+
+.wufoo #errorLi{
+	display:none;
+}
+
+.embed form{
+	padding:10px !important;
+}
+
+.info{
+	padding-bottom:0;
+}
+
+textarea.textarea{
+	min-width:0;
+}
+
+form li.error{
+	background:none !important;
+}
+
+.wufoo a.power{
+	display:none !important !important;
+}
