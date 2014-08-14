@@ -1,0 +1,20 @@
+{
+  "name": "adamgruber.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/adamgruber/adamgruber.github.io",
+  "authors": [
+    "Adam Gruber <adam.gruber@dowjones.com>"
+  ],
+  "description": "adamgruber",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
